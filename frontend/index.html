@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KidzyMart</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Kidz Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <h1>🛍️ KidzyMart</h1>
-  <nav>
-    <a href="#">Toys</a>
-    <a href="#">Kids Clothes</a>
-    <a href="#">Baby Products</a>
-    <a href="#">School Items</a>
-  </nav>
+<h1>Kidz Shopping Store</h1>
 
-<section class="hero">
-  <h2>Best Kids Shopping Store</h2>
-  <p>Buy Toys, Clothes, Baby Products & School Items</p>
-</section>
+<select id="category">
+    <option value="ALL">All</option>
+    <option value="BOYS">Boys</option>
+    <option value="GIRLS">Girls</option>
+    <option value="TOYS">Toys</option>
+    <option value="SHOES">Shoes</option>
+</select>
 
-<section>
-  <h2 class="title">Products</h2>
-  <div id="products" class="products"></div>
-</header>
-</section>
+<div id="products"></div>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
