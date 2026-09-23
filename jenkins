@@ -7,8 +7,8 @@ pipeline {
         stage('clone') {
             steps {
                 git branch: 'main',
-                credentialsId: 'git-id',
-                url: 'https://github.com/bharti7-star/static-website.git'    
+                credentialsId: 'new',
+                url: 'https://github.com/Bharti7-star/Kids-Shopping-App.git'    
             }
         }
         stage('Build') {
