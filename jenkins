@@ -1,1 +1,26 @@
 
+
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                git branch: 'main',
+                credentialsId: 'git-id',
+                url: 'https://github.com/bharti7-star/static-website.git'    
+            }
+        }
+        stage('Build') {
+            steps {
+                 sh '''cd backend
+                mvn clean package -DskipTests'''            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Test Completed'
+            }
+        }
+    }
+}
